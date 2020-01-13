@@ -115,7 +115,6 @@ button{
             </div>
         </div>
 <script>
-
 var ws;
 window.onload = function(){
 	document.querySelector('button').onclick = function(){
