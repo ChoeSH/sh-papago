@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sh.papago.dao.PapagoStatsMapper2">
+	<select id="selectPapagoStats" resultType="stats">
+		select * from papago_stats ps inner join user_info ui on ps.ui_num=ui.ui_num
+		<trim>
+		<if test='order==null'>
+		order by ps_num desc
+		</if>
+		<if test='order!=null'>
+		order by ${order}
+		</if>
+		</trim>
+		limit #{page.startNum}, #{page.pageSize}
+	</select>
+	<insert id="insertPapagoStats" parameterType="stats">
+		insert into papago_stats(ui_num,pi_num,credat)
+		values(#{uiNum},#{piNum},DATE_FORMAT(NOW(),'%Y%m%d'))
+	</insert>
+	
+	<select id="totalTestInfoCount" resultType="int">
+		SELECT COUNT(*) FROM papago_stats
+	</select>
+	
+</mapper>
