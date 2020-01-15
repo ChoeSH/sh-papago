@@ -12,7 +12,7 @@ ajax
 websocket
 lombok
 mybatis
-mariadb
+maria
 ```
 ### 구현
 
