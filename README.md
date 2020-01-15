@@ -4,69 +4,36 @@
 번역기 
 번역한 로그 기록(게시판 페이징)
 
-
 ### 사용 기술
 
 ```
 springframework
+ajax
 websocket
 lombok
 mybatis
 mariadb
 ```
+### 구현
 
-## 구현
 ![login](https://user-images.githubusercontent.com/55867015/72411722-e8ee7400-37ae-11ea-806a-0ed57a92eee2.JPG)
+#### 로그인 없이 다른 페이지로 접속할 경우 보여주는 에러 메시지
+<img src="https://user-images.githubusercontent.com/55867015/72410551-f5250200-37ab-11ea-8b24-ec7c8d2a0a02.png" width="40%" height="40%"></img><br/>
+#### 채팅방 접속
+<img src="https://user-images.githubusercontent.com/55867015/72410558-fa824c80-37ab-11ea-91f7-889a400ba93c.png" width="40%" height="40%"></img><br/>
+#### 번역기 접속
+<img src="https://user-images.githubusercontent.com/55867015/72410561-fc4c1000-37ab-11ea-90bd-42885979310e.png" width="70%" height="70%"></img><br/>
+#### 번역된 기록이 DB에 저장되고 로그에 기록
+<img src="https://user-images.githubusercontent.com/55867015/72410564-fd7d3d00-37ab-11ea-83d4-76d6a13b0694.png" width="70%" height="70%"></img><br/>
 
-![access](https://user-images.githubusercontent.com/55867015/72410551-f5250200-37ab-11ea-8b24-ec7c8d2a0a02.png)
-
-![chat](https://user-images.githubusercontent.com/55867015/72410558-fa824c80-37ab-11ea-91f7-889a400ba93c.png)
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+### 구현 방법
 
 ```
-Give an example
+ajax를 사용하여 MVC패턴을 사용하고 DBCP로 mariaDB에 접속한 뒤, mybatis를 사용 SQL문을 전달하여 번역한 기록을 DB에 저장
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [springFramework](https://spring.io/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
