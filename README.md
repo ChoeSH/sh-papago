@@ -5,7 +5,7 @@
 번역한 로그 기록(게시판 페이징)
 
 
-### Installing
+### 사용 기술
 
 ```
 springframework
@@ -15,18 +15,12 @@ mybatis
 mariadb
 ```
 
-And repeat
+## 구현
+![login](https://user-images.githubusercontent.com/55867015/72411722-e8ee7400-37ae-11ea-806a-0ed57a92eee2.JPG)
 
-```
-until finished
-```
+![access](https://user-images.githubusercontent.com/55867015/72410551-f5250200-37ab-11ea-8b24-ec7c8d2a0a02.png)
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
+![chat](https://user-images.githubusercontent.com/55867015/72410558-fa824c80-37ab-11ea-91f7-889a400ba93c.png)
 ### Break down into end to end tests
 
 Explain what these tests test and why
