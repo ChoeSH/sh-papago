@@ -36,4 +36,6 @@ ajax를 사용하여 MVC패턴을 사용하고 DBCP로 mariaDB에 접속한 뒤,
 
 * [springFramework](https://spring.io/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
+* [bootstrap](http://bootstrapk.com/) - HTML, CSS framework
+
 
