@@ -29,7 +29,7 @@ mariadb
 ### 구현 방법
 
 ```
-ajax를 사용하여 MVC패턴을 사용하고 DBCP로 mariaDB에 접속한 뒤, mybatis를 사용 SQL문을 전달하여 번역한 기록을 DB에 저장
+ajax를 사용하여 MVC패턴을 사용하고 DBCP로 mariaDB에 접속한 뒤, mybatis를 사용 SQL문을 연결하여 번역기에서 번역한 로그를 DB에 저장
 ```
 
 ## Built With
